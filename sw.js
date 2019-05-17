@@ -8,7 +8,7 @@ self.addEventListener("push", function(event) {
         throw new Error('User not subscribed')
     })
     .then(function(res) {
-      return fetch('/pwa-sample3/notifications.json')
+      return fetch('/pwa-sample3/notification.json')
     })
     .then(function(res) {
       if (res.status === 200) {
